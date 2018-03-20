@@ -1,2 +1,64 @@
 # sample_javascript
 Used to create sample application
+
+javascript checklist
+
+- [ ] Editors
+  - [ ] Example: Atom, webstorm, brackets, VSCode
+  - [ ] Editorconfig for consistant code
+- [ ] Package Management
+  - [ ] Example: NPM, bower, JSPM
+  - [ ] Package security
+    - [ ] retire.js and Node Security Platform
+    - [ ] Add to start script "npm start"
+- [ ] Development web server
+  - [ ] for both prod and dev: express, koa, hapi
+  - [ ] for just dev: http-server, live-server, webpack, browsersync
+- [ ] Automation
+  - [ ] Example: grunt, gulp, npm scripts
+  - [ ] Examples of NPM scripts
+    - "security-check" : "nsp check", // test for security
+    - "localtunnel" : "lt --port 3000" // expose the port for sharing
+    - npm-run-all --parallel security-check localtunnel // runs all scripts in parallel
+    - npm start -s // starts with silence
+- [ ] Transpiling
+  - [ ] Example: Babel, TypeScript, Elm
+  - [ ] Babelrc file for configuration
+  - Use same language everywhere (even build scripts)
+  - Can use babel-node instead of node for transpiling
+  - [ ] include in npm scripts
+- [ ] Bundling
+  - [ ] Module formats example: IIFE, AMD, CJS, UMD, ES6
+  - [ ] Latest Example: CJS and ES6
+  - [ ] Bundler example: Browserfiy, Webpack, rollup, jspm
+  - webpack.config.dev.js
+  - [ ] include in dev/prod server.js
+  - [ ] include bundle javascript on html
+- [ ] Sourcemaps
+  - [ ] in webpack.config.dev.js
+- [ ] Linting
+  - [ ] Examples: JSHint, JSLint, ESLint
+  - [ ] .eslintrc.json file
+  - [ ] eslint-watch to watch for files
+  - [ ] try bit.lyjsdeveslint
+  - [ ] add to npm script "lint" : "esw webpack.config.* src buildScripts --color"
+  - [ ] "lint-watch":"npm run lint -- --watch"
+  - [ ] add "lint:watch" to start in npm script
+- [ ] Automated testing
+  - [ ] Examples: Mocha, Jasmine, Tape, QUnit, AVA, Jest
+  - [ ] If using Mocha, you need Assertion library. Example: chia, should, expect
+  - [ ] Helper Library Example: JSDom, Cheerio
+  - [ ] Example Test in browser: Karma, testem - headless:PhantomJS - In-Memory:JSDOM
+  - [ ] Add to Test folder
+  - [ ] Tests should run as save
+- [ ] Continuous Integration
+- [ ] Centralized HTTP
+  - [ ] HTTP Calls - using jQuery/Angular/etc
+
+- [ ] Minification
+- [ ] Dynamic HTML Generation
+- [ ] Mock API framework
+- [ ] Component libraries
+- [ ] Automated build
+- [ ] Automated deployment
+- [ ] Working example
