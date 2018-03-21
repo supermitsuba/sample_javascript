@@ -3,37 +3,37 @@ Used to create sample application
 
 javascript checklist
 
-- [ ] Editors
-  - [ ] Example: Atom, webstorm, brackets, VSCode
-  - [ ] Editorconfig for consistant code
-- [ ] Package Management
-  - [ ] Example: NPM, bower, JSPM
-  - [ ] Package security
-    - [ ] retire.js and Node Security Platform
-    - [ ] Add to start script "npm start"
-- [ ] Development web server
-  - [ ] for both prod and dev: express, koa, hapi
-  - [ ] for just dev: http-server, live-server, webpack, browsersync
-- [ ] Automation
-  - [ ] Example: grunt, gulp, npm scripts
-  - [ ] Examples of NPM scripts
+- [x] Editors
+  - [x] Example: Atom, webstorm, brackets, VSCode
+  - [x] Editorconfig for consistant code
+- [x] Package Management
+  - [x] Example: NPM, bower, JSPM
+  - [x] Package security
+    - [x] retire.js and Node Security Platform
+    - [x] Add to start script "npm start"
+- [x] Development web server
+  - [x] for both prod and dev: express, koa, hapi
+  - [x] for just dev: http-server, live-server, webpack, browsersync
+- [x] Automation
+  - [x] Example: grunt, gulp, npm scripts
+  - [x] Examples of NPM scripts
     - "security-check" : "nsp check", // test for security
     - "localtunnel" : "lt --port 3000" // expose the port for sharing
     - npm-run-all --parallel security-check localtunnel // runs all scripts in parallel
     - npm start -s // starts with silence
-- [ ] Transpiling
-  - [ ] Example: Babel, TypeScript, Elm
-  - [ ] Babelrc file for configuration
+- [x] Transpiling
+  - [x] Example: Babel, TypeScript, Elm
+  - [x] Babelrc file for configuration
   - Use same language everywhere (even build scripts)
   - Can use babel-node instead of node for transpiling
-  - [ ] include in npm scripts
-- [ ] Bundling
-  - [ ] Module formats example: IIFE, AMD, CJS, UMD, ES6
-  - [ ] Latest Example: CJS and ES6
-  - [ ] Bundler example: Browserfiy, Webpack, rollup, jspm
+  - [x] include in npm scripts
+- [x] Bundling
+  - [x] Module formats example: IIFE, AMD, CJS, UMD, ES6
+  - [x] Latest Example: CJS and ES6
+  - [x] Bundler example: Browserfiy, Webpack, rollup, jspm
   - webpack.config.dev.js
-  - [ ] include in dev/prod server.js
-  - [ ] include bundle javascript on html
+  - [x] include in dev/prod server.js
+  - [x] include bundle javascript on html
 - [ ] Sourcemaps
   - [ ] in webpack.config.dev.js
 - [ ] Linting

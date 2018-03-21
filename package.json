@@ -1,0 +1,42 @@
+{
+  "name": "sample_javascript",
+  "version": "1.0.0",
+  "description": "Used to create sample application",
+  "main": "serverScripts/server.js",
+  "scripts": {
+    "prestart": "babel-node serverScripts/startMessage.js",
+    "start": "npm-run-all --parallel open:src security-check",
+    "open:src": "babel-node serverScripts/server.js",
+    "security-check": "nsp check",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel open:src localtunnel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supermitsuba/sample_javascript.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supermitsuba/sample_javascript/issues"
+  },
+  "homepage": "https://github.com/supermitsuba/sample_javascript#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chalk": "^2.3.2",
+    "css-loader": "^0.28.11",
+    "express": "^4.16.3",
+    "localtunnel": "^1.8.3",
+    "npm-run-all": "^4.1.2",
+    "nsp": "^3.2.1",
+    "numeral": "^2.0.6",
+    "open": "0.0.5",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.1"
+  }
+}
