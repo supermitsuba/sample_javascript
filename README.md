@@ -34,16 +34,16 @@ javascript checklist
   - webpack.config.dev.js
   - [x] include in dev/prod server.js
   - [x] include bundle javascript on html
-- [ ] Sourcemaps
-  - [ ] in webpack.config.dev.js
-- [ ] Linting
-  - [ ] Examples: JSHint, JSLint, ESLint
-  - [ ] .eslintrc.json file
-  - [ ] eslint-watch to watch for files
-  - [ ] try bit.lyjsdeveslint
-  - [ ] add to npm script "lint" : "esw webpack.config.* src buildScripts --color"
-  - [ ] "lint-watch":"npm run lint -- --watch"
-  - [ ] add "lint:watch" to start in npm script
+- [x] Sourcemaps
+  - [x] in webpack.config.dev.js
+- [x] Linting
+  - [x] Examples: JSHint, JSLint, ESLint
+  - [x] .eslintrc.json file
+  - [x] eslint-watch to watch for files
+  - [x] try bit.lyjsdeveslint
+  - [x] add to npm script "lint" : "esw webpack.config.* src buildScripts --color"
+  - [x] "lint-watch":"npm run lint -- --watch"
+  - [x] add "lint:watch" to start in npm script
 - [ ] Automated testing
   - [ ] Examples: Mocha, Jasmine, Tape, QUnit, AVA, Jest
   - [ ] If using Mocha, you need Assertion library. Example: chia, should, expect
@@ -55,10 +55,10 @@ javascript checklist
 - [ ] Centralized HTTP
   - [ ] HTTP Calls - using jQuery/Angular/etc
 
-- [ ] Minification
-- [ ] Dynamic HTML Generation
+- [x] Minification
+- [x] Dynamic HTML Generation
 - [ ] Mock API framework
 - [ ] Component libraries
 - [ ] Automated build
 - [ ] Automated deployment
-- [ ] Working example
+- [x] Working example
