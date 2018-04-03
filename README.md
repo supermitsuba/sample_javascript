@@ -56,7 +56,7 @@ javascript checklist
   - [ ] HTTP Calls - using jQuery/Angular/etc
 
 - [x] Minification
-- [x] Dynamic HTML Generation
+- [ ] Dynamic HTML Generation
 - [ ] Mock API framework
 - [ ] Component libraries
 - [ ] Automated build
