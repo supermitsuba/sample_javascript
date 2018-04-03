@@ -1,0 +1,2 @@
+// javascript imports
+import 'bootstrap'

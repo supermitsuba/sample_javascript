@@ -3,32 +3,45 @@ import UglifyJsPlugin from 'uglifyjs-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 export default {
-  mode: 'development',
+  mode: 'production',
   devtool: 'source-map',
-  entry: [
-    path.resolve(__dirname, 'src/index')
-  ],
+  entry: {
+    vendor: path.resolve(__dirname, 'src/vendor'),
+    main: path.resolve(__dirname, 'src/index')
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
-  plugins: [ 
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        default: false,
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendor",
+          chunks: "all"
+        }
+      }
+    }
+  },
+  plugins: [
     new HtmlWebpackPlugin({
-        template:'src/index.html',
-        minify: {
-          removeComments:true,
-          collapseWhitespace: true,
-          removeRedundantAttributes: true,
-          useShortDoctype: true,
-          removeEmptyAttributes: true,
-          removeStyleLinkTypeAttributes:true,
-          keepClosingSlash:true,
-          minifyJS:true,
-          minifyCSS:true,
-          minifyURLs:true
-        },
-        inject:true
+      template: 'src/index.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      },
+      inject: true
     }),
 
     new UglifyJsPlugin({
@@ -38,7 +51,7 @@ export default {
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_module/, loaders: ['babel-loader'] },
-      { test: /\.css$/, loaders: ['style-loader','css-loader']}
+      { test: /\.css$/, loaders: ['style-loader', 'css-loader'] }
     ]
   }
 }

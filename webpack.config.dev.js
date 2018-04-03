@@ -10,7 +10,19 @@ export default {
   output: {
     path: path.resolve(__dirname, 'src'),
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: '[name].js'
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        default: false,
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendor",
+          chunks: "all"
+        }
+      }
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -3,7 +3,7 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // javascript imports
-import 'bootstrap';
+
 
 import numeral from 'numeral'
 
